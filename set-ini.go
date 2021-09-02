@@ -58,10 +58,10 @@ func main() {
 
 	sections := cfg.Sections()
 	for i, s := range sections {
-		log.Println(i, s.Name())
+		log.Println("Section", i, s.Name())
 		keys := s.Keys()
 		for j, k := range keys {
-			log.Println(j, k.Name(), k.String())
+			log.Println("Parameter", j, k.Name(), k.String())
 		}
 	}
 }
